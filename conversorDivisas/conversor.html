@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <img src="https://www.avatrade.es/wp-content/uploads/2018/03/trading-divisas.jpg" alt="ElmundoDivisas" width="200px">
+  <h1>Conversor de Divisas </h1>
+  <form action="">
+    <div>
+      <label for="">Cantidad a convertir</label>
+      <input type="number" id="inputCantidad" min="1" max="1000" display="" , required>
+
+    </div>
+    <label for="">Elige tu Moneda</label>
+    <select name="select" id="inputDe">
+      <option value="1">Dolar</option>
+      <option value="2">Peso Mexicano</option>
+      <option value="3">Peso Colombiano</option>
+      <option value="4">Euro</option>
+      <option value="5">Libra Esterlina</option>
+    </select>
+    </div>
+
+    <div>
+      <label for="">Elige tu Moneda</label>
+      <select name="select" id="inputA">
+        <option value="1">Dolar</option>
+        <option value="2">Peso Mexicano</option>
+        <option value="3">Peso Colombiano</option>
+        <option value="4">Euro</option>
+        <option value="5">Libra Esterlina</option>
+      </select>
+      <div>
+        <input type="submit" id="btnSubmit" value="Covertir" onclick="capturar()">
+      </div>
+    </div>
+
+  </form>
+  <div id="resultado">
+    <label for="">Equivale</label>
+    <input id="totalEquivale" readonly>
+  </div>
+
+  <script src="conversor.js"></script>
+</body>
+
+</html>
